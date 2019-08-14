@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20170307_SNeVom_YOEg.info.json.vo.* \
+    20170307_SNeVom_YOEg.info.json.ao.* \
+    20170307_SNeVom_YOEg.info.json.bo.* \
+    20170307_SNeVom_YOEg.info.json.wav 
+
+rm -fr               20170307_SNeVom_YOEg.info_dir
+mkdir -p             20170307_SNeVom_YOEg.info_dir
+mv 20170307_SNeVom_YOEg.info.json 20170307_SNeVom_YOEg.info.json.*         20170307_SNeVom_YOEg.info_dir/
+
+
+
+mv  20170307_SNeVom_YOEg.info_dir/20170307_SNeVom_YOEg.info.json.jpg 20170307_SNeVom_YOEg.info_dir/20170307_SNeVom_YOEg.info.json.webm.mp4.jpg
+
+cat > 20170307_SNeVom_YOEg.info_dir/_index.md << EOF3
++++
+title = " 20170307_SNeVom_YOEg 平论 | 65万亿饮鸩止渴，谁的眼泪在飞？2017-03-07 "
+description = " 2017年3月1日，中国国家发改委宣布今年固定资产投资65万亿，远超2月底媒体报道的45万亿,中国债务危机到底有多严重？2016年中国债务规模已经突破200万亿，债务与GDP的比例高达279%，比2015年上升了21个百分点，据摩根斯丹利经济学家陈艾亚测算，相当于去年新增加了4.5万亿美元债务，因为数据来源的不同，陈艾亚关于中国债务的数据与我略有不同，但相当接近，中国经济畸形发展，近年来，越来越依赖由政府强力主导的固定资产投资，全球投资者都在关注中国经济运行的巨大风险和不确定性，中国债务危机会不会在2017爆发？会不会继而引爆金融危机？65万亿是饮鸩止渴还是画饼充饥？ "
+weight = 20
++++
+
+{{< mymp4 mp4="20170307_SNeVom_YOEg.info.json.webm.mp4" 
+text="len $(cat 20170307_SNeVom_YOEg.info_dir/20170307_SNeVom_YOEg.info.json.webm.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20170307_SNeVom_YOEg.info.json.25k.mp4"
+text="len $(cat 20170307_SNeVom_YOEg.info_dir/20170307_SNeVom_YOEg.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="2017年3月1日，中国国家发改委宣布今年固定资产投资65万亿，远超2月底媒体报道的45万亿,中国债务危机到底有多严重？2016年中国债务规模已经突破200万亿，债务与GDP的比例高达279%，比2015年上升了21个百分点，据摩根斯丹利经济学家陈艾亚测算，相当于去年新增加了4.5万亿美元债务，因为数据来源的不同，陈艾亚关于中国债务的数据与我略有不同，但相当接近，中国经济畸形发展，近年来，越来越依赖由政府强力主导的固定资产投资，全球投资者都在关注中国经济运行的巨大风险和不确定性，中国债务危机会不会在2017爆发？会不会继而引爆金融危机？65万亿是饮鸩止渴还是画饼充饥？" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=SNeVom_YOEg" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+

@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20170504_WMKF2z0MQ5Y.info.json.vo.* \
+    20170504_WMKF2z0MQ5Y.info.json.ao.* \
+    20170504_WMKF2z0MQ5Y.info.json.bo.* \
+    20170504_WMKF2z0MQ5Y.info.json.wav 
+
+rm -fr               20170504_WMKF2z0MQ5Y.info_dir
+mkdir -p             20170504_WMKF2z0MQ5Y.info_dir
+mv 20170504_WMKF2z0MQ5Y.info.json 20170504_WMKF2z0MQ5Y.info.json.*         20170504_WMKF2z0MQ5Y.info_dir/
+
+
+
+mv  20170504_WMKF2z0MQ5Y.info_dir/20170504_WMKF2z0MQ5Y.info.json.jpg 20170504_WMKF2z0MQ5Y.info_dir/20170504_WMKF2z0MQ5Y.info.json.mp4.jpg
+
+cat > 20170504_WMKF2z0MQ5Y.info_dir/_index.md << EOF3
++++
+title = " 20170504_WMKF2z0MQ5Y 平论 Live | 秦伟平专访郭文贵 2017-05-04 （正式采访从第25分钟开始） "
+description = " 2017年5月4日上午九点，郭文贵先生接受平论主持人秦伟平先生独家视频直播专访，谈及他的人生第一桶金，以及他奉命与尊者达赖喇嘛接触经历，还有他曾荣立国家一等功，并首次公开谈及他所了解的中国金融市场及楼市股市黑幕并给观众投资建议，最后勉励青年人努力奋斗。https://www.pscp.tv/WeipingQin/1ZkKzyzQvYXxv twitter "
+weight = 20
++++
+
+{{< mymp4 mp4="20170504_WMKF2z0MQ5Y.info.json.mp4" 
+text="len $(cat 20170504_WMKF2z0MQ5Y.info_dir/20170504_WMKF2z0MQ5Y.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20170504_WMKF2z0MQ5Y.info.json.25k.mp4"
+text="len $(cat 20170504_WMKF2z0MQ5Y.info_dir/20170504_WMKF2z0MQ5Y.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="2017年5月4日上午九点，郭文贵先生接受平论主持人秦伟平先生独家视频直播专访，谈及他的人生第一桶金，以及他奉命与尊者达赖喇嘛接触经历，还有他曾荣立国家一等功，并首次公开谈及他所了解的中国金融市场及楼市股市黑幕并给观众投资建议，最后勉励青年人努力奋斗。https://www.pscp.tv/WeipingQin/1ZkKzyzQvYXxv twitter" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=WMKF2z0MQ5Y" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
