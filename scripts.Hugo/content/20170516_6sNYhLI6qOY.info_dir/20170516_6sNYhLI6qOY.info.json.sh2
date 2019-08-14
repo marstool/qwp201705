@@ -1,0 +1,54 @@
+#!/bin/bash
+
+rm -f \
+    20170516_6sNYhLI6qOY.info.json.vo.* \
+    20170516_6sNYhLI6qOY.info.json.ao.* \
+    20170516_6sNYhLI6qOY.info.json.bo.* \
+    20170516_6sNYhLI6qOY.info.json.wav 
+
+rm -fr               20170516_6sNYhLI6qOY.info_dir
+mkdir -p             20170516_6sNYhLI6qOY.info_dir
+mv 20170516_6sNYhLI6qOY.info.json 20170516_6sNYhLI6qOY.info.json.*         20170516_6sNYhLI6qOY.info_dir/
+
+
+
+mv  20170516_6sNYhLI6qOY.info_dir/20170516_6sNYhLI6qOY.info.json.jpg 20170516_6sNYhLI6qOY.info_dir/20170516_6sNYhLI6qOY.info.json.mp4.jpg
+
+cat > 20170516_6sNYhLI6qOY.info_dir/_index.md << EOF3
++++
+title = " 20170516_6sNYhLI6qOY 平论Live | 一带一路的风险与机遇（下） 2017-05-16 "
+description = " 5月14-15日，北京召开一带一路国际合作高峰论坛，秦伟平先生首次公开点评一带一路，分析三大主要风险以及两个主要机遇。（因直播网络中断，所以分上下两集播出，中间漏掉约10分钟） "
+weight = 20
++++
+
+{{< mymp4 mp4="20170516_6sNYhLI6qOY.info.json.mp4" 
+text="len $(cat 20170516_6sNYhLI6qOY.info_dir/20170516_6sNYhLI6qOY.info.json.mp4|wc -c)"
+>}}
+
+{{< mymp4x  mp4x="20170516_6sNYhLI6qOY.info.json.25k.mp4"
+text="len $(cat 20170516_6sNYhLI6qOY.info_dir/20170516_6sNYhLI6qOY.info.json.25k.mp4|wc -c)"
+>}}
+
+
+{{< mydiv text="5月14-15日，北京召开一带一路国际合作高峰论坛，秦伟平先生首次公开点评一带一路，分析三大主要风险以及两个主要机遇。（因直播网络中断，所以分上下两集播出，中间漏掉约10分钟）" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=6sNYhLI6qOY" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
+EOF3
+
+
