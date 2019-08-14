@@ -1,0 +1,34 @@
++++
+title = " 20170425_dhd9u54YdnM 平论 | 第二季如约而至 "
+description = " 激赏平论 ：https://www.paypal.me/highpointinstitute__2016年4月28日，旅美青年学者秦伟平先生的财经时政脱口秀《平论 | Weiping Show 》在美国ACM电视台首播，并在YouTube平论频道同步播出，覆盖全球数百万观众，仅网上视频播放量亦超过百万人次，非常感恩海内外所有观众朋友的关注和支持，欢迎大家推荐订阅，平论第二季，仅YouTube平论频道已经突然四百万人次播放，我们一起加油！__如果你想支持平论，欢迎激赏. https://www.paypal.me/highpointinstitute "
+weight = 20
++++
+
+{{< mymp4 mp4="20170425_dhd9u54YdnM.info.json.mp4" 
+text="len 10329903"
+>}}
+
+{{< mymp4x  mp4x="20170425_dhd9u54YdnM.info.json.25k.mp4"
+text="len 174474"
+>}}
+
+
+{{< mydiv text="激赏平论 ：https://www.paypal.me/highpointinstitute__2016年4月28日，旅美青年学者秦伟平先生的财经时政脱口秀《平论 | Weiping Show 》在美国ACM电视台首播，并在YouTube平论频道同步播出，覆盖全球数百万观众，仅网上视频播放量亦超过百万人次，非常感恩海内外所有观众朋友的关注和支持，欢迎大家推荐订阅，平论第二季，仅YouTube平论频道已经突然四百万人次播放，我们一起加油！__如果你想支持平论，欢迎激赏. https://www.paypal.me/highpointinstitute" >}}
+<br>
+
+{{< mydiv text="https://www.youtube.com/watch?v=dhd9u54YdnM" >}}
+
+
+<br>
+
+请大家传播时，不需要传播文件本身，<br>
+原因是：一旦传播过大东西（例如，图片，文件），<br>
+就会触发检查机制。<br>
+我不知道检查机制的触发条件。<br>
+但是我知道，不会说你传一个没有敏感词的网络地址都检查，<br>
+否则，检查员得累死。<br><br>
+直接转发网址就可以了：<br>
+原因是，这是程序员网站，<br>
+共匪不敢封锁，墙内可以直接下载。
+
+
